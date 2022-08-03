@@ -13,14 +13,16 @@ public class App
         System.out.println(args[1]);
 
         Casa minhaCasa = new Casa();
-        minhaCasa.numeroDeComodos = 6;
-        minhaCasa.cor = "azul";
+        minhaCasa.setNumeroDeComodos(6);
+        minhaCasa.setCor("azul");
 
         System.out.println(minhaCasa);
+        System.out.println("numero de comodos: " + minhaCasa.getNumeroDeComodos());
+        System.out.println("cor da casa: " + minhaCasa.getCor());
 
         Casa casaDaJerilly = new Casa();
-        casaDaJerilly.numeroDeComodos = 4;
-        casaDaJerilly.cor = "branca";
+        casaDaJerilly.setNumeroDeComodos(4);
+        casaDaJerilly.setCor("branca");
 
         System.out.println(casaDaJerilly);
     }
